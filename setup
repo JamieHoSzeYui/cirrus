@@ -1,8 +1,5 @@
 #!/bin/bash
 
-
-lshw -short
-nproc --all
 mkdir /tmp/ci/sync/ && cd /tmp/ci/sync/ 
 chmod -R 0777 .
 export ARCH_ARM_HAVE_TLS_REGISTER=true
