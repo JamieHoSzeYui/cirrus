@@ -1,0 +1,12 @@
+#!/bin/bash 
+
+cd /tmp/ci/build/
+
+git clone https://github.com/JamieHoSzeYui/device_xiaomi_sm6250-common device/xiaomi/sm6250-common 
+git clone https://github.com/JamieHoSzeYui/device_xiaomi_miatoll device/xiaomi/miatoll 
+git clone https://github.com/JamieHoSzeYui/vendor_xiaomi_miatoll --depth=1 --single-branch vendor/xiaomi/miatoll 
+git clone https://github.com/JamieHoSzeYui/vendor_xiaomi_sm6250-common --depth=1 --single-branch vendor/xiaomi/sm6250-common 
+git clone https://github.com/JamieHoSzeYui/android_kernel_xiaomi_sm6250 --depth=1 --single-branch kernel/xiaomi/sm6250  
+
+. build/envsetup.sh 
+brunch miatoll 
