@@ -1,0 +1,13 @@
+env: # Environt variable to pass to all tasks
+    CIRRUS_CLONE_DEPTH: 1 # No need to clone with whole history
+    CIRRUS_WORKING_DIR: "/work/" # Where to clone repo
+task:
+    name: test
+    timeout_in: 120m 
+    container:
+      image: apon77/aosp:latest
+      cpu: 16  
+    sync_script: # To sync source
+      - bash check
+
+
