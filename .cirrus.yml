@@ -8,10 +8,10 @@ task:
       image: apon77/aosp:latest
       cpu: 16
       memory: 24G
-    sync:
+    sync_script:
       - bash setup
-    build: 
+    build_script: 
       - bash build 
-    upload: 
+    upload_script: 
       - bash upload
 
