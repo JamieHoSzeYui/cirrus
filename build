@@ -9,4 +9,9 @@ git clone https://github.com/JamieHoSzeYui/vendor_xiaomi_sm6250-common --depth=1
 git clone https://github.com/JamieHoSzeYui/android_kernel_xiaomi_sm6250 --depth=1 --single-branch kernel/xiaomi/sm6250  
 
 . build/envsetup.sh 
-brunch miatoll 
+lunch lineage_miatoll-userdebug
+make api-stubs-docs 
+make hiddenapi-lists-docs
+make system-api-stubs-docs
+make test-api-stubs-docs
+make bacon -j16
