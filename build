@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-cd /tmp/ci/build/
+cd /tmp/ci/sync/
 
 git clone https://github.com/JamieHoSzeYui/device_xiaomi_sm6250-common device/xiaomi/sm6250-common 
 git clone https://github.com/JamieHoSzeYui/device_xiaomi_miatoll device/xiaomi/miatoll 
